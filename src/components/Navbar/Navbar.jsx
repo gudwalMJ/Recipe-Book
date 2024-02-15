@@ -16,10 +16,13 @@ function Navbar({ onToggleSidebar }) {
 
   return (
     <nav className="navbar">
-      <div onClick={toggleSidebar} className="hamburger-icon">
-        &#9776; {/* This is a simple text representation of a hamburger icon */}
+      <div className="navbar-brand">
+        <div onClick={toggleSidebar} className="hamburger-icon">
+          &#9776;{" "}
+          {/* This is a simple text representation of a hamburger icon */}
+        </div>
+        <img src={logo} alt="Logo" />
       </div>
-      <img src={logo} alt="Logo" />
       <h1>Recipe Book</h1>
     </nav>
   );
