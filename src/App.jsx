@@ -8,6 +8,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 // Pages
 import HomePage from "./pages/HomePage/HomePage";
 import AboutPage from "./pages/AboutPage/AboutPage";
+import ItemDetailsPage from "./pages/ItemDetailsPage/ItemDetailsPage";
 // Styling
 import "./App.css";
 
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="about" element={<AboutPage />} />
+        <Route path="/item/:id" element={<ItemDetailsPage />} />
       </Routes>
       <Footer />
     </Router>

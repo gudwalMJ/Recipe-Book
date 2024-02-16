@@ -1,5 +1,6 @@
+// List.jsx
 import React from "react";
-import ListItem from "../ListItem/ListItem"; // Adjust the path as necessary
+import ListItem from "../ListItem/ListItem";
 
 function List({ recipes, onDelete }) {
   return (

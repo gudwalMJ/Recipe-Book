@@ -1,0 +1,43 @@
+.about-page {
+  text-align: left;
+  padding: 2rem;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+.team-section {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.team-member {
+  background-color: #44bed8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-member h3 {
+  margin-top: 0;
+}
+.team-member p {
+  text-align: center;
+}
+
+.team-member a {
+  margin-right: 0.5rem;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.team-member a:hover {
+  text-decoration: underline;
+}
