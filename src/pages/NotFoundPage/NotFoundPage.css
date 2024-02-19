@@ -1,0 +1,26 @@
+.not-found-page {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem; /* Adjust as necessary based on your navbar height */
+}
+
+.not-found-page h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.not-found-page p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.not-found-page a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.not-found-page a:hover {
+  text-decoration: underline;
+}

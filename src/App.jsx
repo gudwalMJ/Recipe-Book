@@ -9,6 +9,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import HomePage from "./pages/HomePage/HomePage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import ItemDetailsPage from "./pages/ItemDetailsPage/ItemDetailsPage";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 // Styling
 import "./App.css";
 
@@ -21,8 +22,9 @@ function App() {
       <Sidebar isOpen={isSidebarOpen} />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="about" element={<AboutPage />} />
         <Route path="/item/:id" element={<ItemDetailsPage />} />
+        <Route path="about" element={<AboutPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
     </Router>
