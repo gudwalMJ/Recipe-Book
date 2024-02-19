@@ -10,6 +10,10 @@ import "./HomePage.css";
 function HomePage() {
   const [recipes, setRecipes] = useState(initialRecipes);
 
+  const updateRecipe = (updatedRecipes) => {
+    setRecipes(updatedRecipes);
+  };
+
   const deleteRecipe = (id) => {
     setRecipes(recipes.filter((recipe) => recipe.id !== id));
   };
@@ -25,7 +29,11 @@ function HomePage() {
       <h2>Welcome to the Recipe Book</h2>
       <p>This is the home page of my recipe book app.</p>
       <AddRecipeForm onAddRecipe={addNewRecipe} />
-      <RecipesList recipes={recipes} onDelete={deleteRecipe} />
+      <RecipesList
+        recipes={recipes}
+        onDelete={deleteRecipe}
+        onUpdate={updateRecipe}
+      />
     </div>
   );
 }
