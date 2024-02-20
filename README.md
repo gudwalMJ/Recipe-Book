@@ -1,7 +1,7 @@
 # Recipe Book Application
 
 <img src="../Recipe-Book/src/images/PageLook.gif" width="600" height="400" />
-![Page Look](/src/images/PageLook.gif)
+
 
 ## Overview
 
