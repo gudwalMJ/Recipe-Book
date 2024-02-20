@@ -1,7 +1,7 @@
 /* RecipesList.css */
 .recipes-list {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* Creates 4 columns */
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 30px;
   margin-top: 50px;
@@ -11,6 +11,7 @@
 }
 
 .recipe-item {
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -18,6 +19,11 @@
   border: 1px solid #ddd;
   border-radius: 4px;
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.recipe-item:hover {
+  transform: scale(1.05); /* Slightly increase the size of the card on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
 
 .recipe-item img {
@@ -66,10 +72,19 @@
 .edit-button:hover {
   background-color: #3c8d3f;
 }
-/* Adjust when sidebar is not open */
+
+/* Adjust for tablets */
 @media screen and (max-width: 768px) {
-  /* Adjust based on your sidebar's responsiveness */
   .recipes-list {
+    grid-template-columns: repeat(3, 1fr); /* Reduce to 3 columns for tablets */
     padding-left: 20px;
+  }
+}
+
+/* Adjust for mobile phones */
+@media screen and (max-width: 480px) {
+  .recipes-list {
+    grid-template-columns: 1fr; /* Single column for mobile phones */
+    padding: 20px 10px; /* Adjust padding for smaller screens */
   }
 }

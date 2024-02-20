@@ -1,23 +1,29 @@
 form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   margin-bottom: 2rem;
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
   padding: 2rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   background: #ffffff;
-  border-radius: 8px;
+  border-radius: 12px;
+  font-family: "Arial", sans-serif;
 }
 
 form input,
 form button {
-  padding: 0.5rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
   margin: 0;
+  outline: none;
+}
+form input:focus {
+  border-color: #3fb5d0;
+  box-shadow: 0 0 0 2px rgba(63, 181, 208, 0.2);
 }
 
 form button {
@@ -25,18 +31,25 @@ form button {
   color: white;
   cursor: pointer;
   border: none;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, box-shadow 0.2s, transform 0.2s;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
 }
 
 form button:hover {
   background-color: #45a049;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(1px);
 }
 
 @media (max-width: 600px) {
   form {
-    max-width: 100%;
-    padding: 1rem;
-    margin: 1rem;
+    max-width: 90%;
+    padding: 1.5rem;
+    margin: 1.5rem;
   }
 
   form input {

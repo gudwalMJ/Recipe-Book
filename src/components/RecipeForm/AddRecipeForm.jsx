@@ -1,4 +1,4 @@
-// RecipeForm.jsx
+// AddRecipeForm.jsx
 import React, { useState } from "react";
 // Styling
 import "./AddRecipeForm.css";

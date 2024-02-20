@@ -1,6 +1,7 @@
 // Navbar.jsx
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 // Logo Image
 import logo from "/src/images/Recipe-Book-Icon.webp";
 // Styling
@@ -19,9 +20,10 @@ function Navbar({ onToggleSidebar }) {
       <div className="navbar-brand">
         <div onClick={toggleSidebar} className="hamburger-icon">
           &#9776;{" "}
-          {/* This is a simple text representation of a hamburger icon */}
         </div>
-        <img src={logo} alt="Logo" />
+        <Link to="/">
+          <img src={logo} alt="Recipe Book Logo" />
+        </Link>
       </div>
       <h1>Recipe Book</h1>
     </nav>
