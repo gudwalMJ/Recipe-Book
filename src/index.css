@@ -4,7 +4,6 @@
   font-weight: 400;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: whitesmoke;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -22,8 +21,18 @@ a:hover {
 
 body {
   margin: 0;
+  padding: 0;
   min-width: 320px;
-  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #3fb5d0 0%,
+    #3fb5d0 33%,
+    #e28436 66%,
+    #ffffff 100%
+  );
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Full height */
 }
 
 h1 {

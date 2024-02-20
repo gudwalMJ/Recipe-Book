@@ -8,20 +8,39 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+  font-weight: 500;
 }
 
 footer p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 footer a {
-  color: #e08236; /* This is the color used in the Sidebar gradient */
+  color: #e08236;
   text-decoration: none;
   transition: color 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 4px;
 }
 
-footer a:hover {
+footer a:hover,
+footer a:focus {
   color: #ffffff;
   text-decoration: underline;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Subtle background on hover/focus */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  footer {
+    padding: 1rem; /* Adjust padding on smaller screens */
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
 }
